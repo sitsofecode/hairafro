@@ -6,7 +6,7 @@ import SocialMedias from '../SocialMedias'
 function Home() {
     return (
         <section className='h-screen bg-bg1 w-screen'>
-            <div className=' h-screen flex justify-around p-10'>
+            <div className=' h-screen flex justify-around p-20'>
                 <div>
                     <div className='flex'>
                         <img src='LogoDebora.png' alt='' className='h-16  mr-0' />
@@ -29,8 +29,7 @@ function Home() {
                 </div>
                 <img src='LogoDebora.png' alt='' className='h-full m-0 ' />
                 <div className='mt-4 mr-0 text-xl tracking-widest flex mr-5 '>Menu  <AiOutlineMenu className='m-1' /> </div>
-                <div className='relative top-[-10]'>
-                </div>
+                
             </div>
         </section>
     )
