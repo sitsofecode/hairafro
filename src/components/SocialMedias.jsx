@@ -1,5 +1,5 @@
 import React from "react";
-import { SiWhatsapp, SiGithub, SiTwitter, SiInstagram } from "react-icons/si";
+import { SiTwitter, SiInstagram } from "react-icons/si";
 
 const SocialMedias = () => {
   return (

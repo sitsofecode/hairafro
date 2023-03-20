@@ -1,14 +1,29 @@
 import './App.css';
-import { Route , Routes } from 'react-router-dom';
-import AllPage from './components/pages';
-import IllustrationDetail from './components/pages/illustrationDetail';
+import {
+  Route,
+  // Outlet,
+  createBrowserRouter, RouterProvider,
+  createRoutesFromElements
+} from 'react-router-dom';
+import Home from './components/pages/Home';
+import Blog from './components/pages/Blog';
+import Layout from './components/Layout';
+import Illustration from './components/pages/illustration/Illustration';
+import IllustrationDetail from './components/pages/illustration/illustrationDetail';
+
+
+const router = createBrowserRouter(createRoutesFromElements(
+  <Route path='/' element={<Layout />}>
+    <Route index element={<Home />} />
+    <Route path='blog' element={<Blog />} />
+    <Route path='illustration' element={<Illustration />} />
+    <Route path='illustration/:id' element={<IllustrationDetail />} />
+  </Route>
+));
 function App() {
   return (
-    <div className="App tracking-widest">
-    <Routes>
-      <Route path='/' element={   <AllPage/>}/>
-      {/* <Route path='illsutration/:id' element ={<IllustrationDetail/>} /> */}
-    </Routes>
+    <div className=" overflow-x-hidden bg-bg2">
+      <RouterProvider router={router} />
     </div>
   );
 }
