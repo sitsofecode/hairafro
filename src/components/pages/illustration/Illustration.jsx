@@ -19,7 +19,7 @@ function Illustration() {
           <div className='bg-white rounded-lg flex justify-center'>
             <img src={items.imageUrl} alt='' className='h-full w-full object-cover transition-transform duration-500 group-hover:scale-125' />
           </div>
-            <h1 className="font-dmserif  font-bold text-black">{items.name}</h1>
+            {/* <h1 className="font-dmserif  font-bold text-black">{items.name}</h1> */}
           <div className="absolute   to-button/40 group-hover:bg-button group-hover:via-button/60 group-hover:to-button/70"></div>
           <div className="absolute inset-0 flex 2xl:translate-y-[50%] hidden group-hover:block group-hover:transition-opacity flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
             <p className="mb-3 text-lg  text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
