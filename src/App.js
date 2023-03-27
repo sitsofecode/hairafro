@@ -17,12 +17,12 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route index element={<Home />} />
     <Route path='blog' element={<Blog />} />
     <Route path='illustration' element={<Illustration />} />
-    <Route path='illustration/:id' element={<IllustrationDetail />} />
+    <Route path='illustration/:id' element={<IllustrationDetail/>} />
   </Route>
 ));
 function App() {
   return (
-    <div className=" overflow-x-hidden bg-bg2">
+    <div className=" overflow-x-hidden bg-bg2 font-mono">
       <RouterProvider router={router} />
     </div>
   );

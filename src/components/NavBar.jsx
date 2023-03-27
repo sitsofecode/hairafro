@@ -5,7 +5,7 @@ function NavBar() {
     const activeStyle = {
         fontWeight: "bold",
         textDecoration: "underline",
-        color: "#161616"
+        color: "#3B1500"
     }
     return (
         <nav className='flex  space-x-5 m-7 '>
