@@ -10,6 +10,7 @@ import Blog from './components/pages/Blog';
 import Layout from './components/Layout';
 import Illustration from './components/pages/illustration/Illustration';
 import IllustrationDetail from './components/pages/illustration/illustrationDetail';
+import Vision from './components/pages/Vision';
 
 
 const router = createBrowserRouter(createRoutesFromElements(
@@ -18,6 +19,7 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route path='blog' element={<Blog />} />
     <Route path='illustration' element={<Illustration />} />
     <Route path='illustration/:id' element={<IllustrationDetail/>} />
+    <Route path='apropos' element={<Vision/>}/>
   </Route>
 ));
 function App() {

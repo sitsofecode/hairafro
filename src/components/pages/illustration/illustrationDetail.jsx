@@ -3,6 +3,7 @@ import {
   BsDownload
 } from "react-icons/bs"
 import {
+  Link,
   // Link,
   useParams,
   // useLocation
@@ -28,6 +29,7 @@ function IllustrationDetail() {
     <div>
       <div className='flex justify-around w-full'>
         <div className='flex justify-center w-2/4 '>
+        <Link to =".." >Back</Link>
           <img src={coiffureDetails.imageUrl} alt='' className='h-screen rounded-lg m-10 bg-white' />
         </div>
         <div className='w-2/4 p-10 space-y-3'>
@@ -43,7 +45,7 @@ function IllustrationDetail() {
           </div>
           <div className='flex'>
             <h1 className={titleStyle}>Auteur : </h1>
-            <p className=''> Debora DIMADO</p>
+            <p className={paragraphStyle}> Debora DIMADO</p>
           </div>
           <div className='flex'>
             <h1 className={titleStyle}>Type du Ficher  : </h1>
