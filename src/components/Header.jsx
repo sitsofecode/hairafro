@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom'
 
 function Header() {
     return (
-        <div>
-            <div className='flex justify-between'>
+        <div className=' shadow-md'> 
+            <div className='flex justify-between text-sm'>
                 <div className='flex'>
                     <Link to="/">
                         <div className='flex m-2'>
                             <img src='LogoDebora.png' alt='' className='h-16 m-0 ' />
-                            <h1 className='mt-4 mr-0 text-xl' >hairafro.</h1>
+                            <h1 className='mt-4 mr-0 text-xl font-medium mr-0' >hairafro.</h1>
                         </div></Link>
                     <NavBar />
                 </div>
