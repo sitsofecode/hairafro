@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { AiOutlineFile } from "react-icons/ai"
 import { BsDownload, BsPencil } from "react-icons/bs"
 import { IoPricetagsOutline } from "react-icons/io5"
-import {BiArrowBack} from "react-icons/bi"
+import { BiArrowBack } from "react-icons/bi"
 import {
   Link,
   // Link,
@@ -39,7 +39,6 @@ function IllustrationDetail() {
 
   // console.log(catCoiffure)
   // console.log(coiffureDetails)
-
   // const search = location.state?.search || ""
   const card = catCoiffure?.map((items) => {
     return (
@@ -69,7 +68,7 @@ function IllustrationDetail() {
     <div >
       <div className='flex'>
         <div>
-          <button className='m-10' onClick={() => navigate(-1)}><BiArrowBack className='text-3xl'/></button>
+          <button className='m-10' onClick={() => navigate(-1)}><BiArrowBack className='text-3xl' /></button>
         </div>
         <div className='flex justify-around   mt-5 mx-16 shadow-all rounded-lg'>
           <div className='flex justify-center w-2/4 '>
@@ -79,13 +78,10 @@ function IllustrationDetail() {
             <div>
               <h1 className='text-center text-xl font-semibold m-4'> {coiffureDetails.name}</h1>
               <p className='text-sm'>
-                L’oiseau trompette
-                Cette coiffure est d’origine guinéenne.
-                En Guinée, dans les milieux peuls, l'oiseau trompette symbolise la femme en référence à sa huppe.
-                Ce nom lui vient de l’histoire d’une jeune femme peulh aussi belle que riche qui se tressait les cheveux en plein milieu d’une cérémonie.
-                Les touffes de cotés étaient déjà tressées lorsqu’elle fut interompue par sa coépouse qui lui annoça une mauvaise nouvelle à propos de leur mari qui serait victime d’une tragédie.
-                Brisée, elle poussa un cri de désarroi et se transforma en un bel oiseau trompette
-                P.48 Etudes dahoméennes
+                Les tresses au fil (ATIN) encore appelées Eko , Bridge, Akule , Sunga
+                sont une technique de coiffage adoptée depuis des siècles par les femmes noires, elles représentent les cheveux enroulés d'un fil de couture ou de nylon.
+                L'utilisation des fils pour tresser les cheveux est courante chez les Yoruba du sud Ouest du Nigeria au Benin.
+                Utilisé pour l'assouplissement des cheveux, il sert aussi d'isolant pour l'eau et les protège contre la casse.
               </p>
             </div>
             <div className='flex'>
@@ -110,11 +106,10 @@ function IllustrationDetail() {
             </a>
           </div>
         </div>
+        <div className='w-32'> </div>
       </div>
-
       <div className='flex justify-center items-center     relative'>
         <h1 className='text-text1  text-center text-4xl font-medium mt-8 flex ml-0 ' >
-
         </h1>
       </div>
       <p className='text-center my-10'>Vous pourrez aussi aimer ces illustrations
@@ -124,7 +119,6 @@ function IllustrationDetail() {
         {card}
       </div>
     </div>
-
   )
 }
 

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import {
     Link,
     //  useLoaderData, useSearchParams,
-    NavLink
+    NavLink, useSearchParams
 } from 'react-router-dom';
 import { BiSearchAlt } from 'react-icons/bi'
 
@@ -10,7 +10,9 @@ import { BiSearchAlt } from 'react-icons/bi'
 // import SocialMedias from '../SocialMedias'
 
 function Home() {
-    const liStyle = "mt-20 hover:bg-white p-3 px-10 rounded-full text-white bg-black/70 font-medium  hover:text-black"
+    const liStyle = " bg-button/80 hover:bg-white p-3 px-10 rounded-full text-white bg-black/70 font-medium  hover:text-black"
+    const [searchParams, setSearchParams] = useSearchParams();
+    const typeFilter = searchParams.get('type');
 
     const [coiffure, setCoiffure] = useState([])
     useEffect(() => {
@@ -19,7 +21,7 @@ function Home() {
             .then(data => setCoiffure(data.coiffures))
     }, []);
 
-    console.log(coiffure)
+    console.log(typeFilter)
     const card = coiffure.map((items) => {
         return (
             <div key={items.id} className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 rounded-lg shadow-lg">
@@ -46,9 +48,9 @@ function Home() {
                 {/* <video autoPlay muted loop className='  w-screen   object-cover' style={{ height: "80vh" }}>
                     <source src="2.mp4" type="video/mp4" />
                 </video> */}
-                <img src='pic1.jpg' alt='' className=' w-screen   object-cover opacity-80' style={{ height: "80vh" }}/>
+                <img src='pic3.jpg' alt='' className=' w-screen   object-cover opacity-80' style={{ height: "80vh" }} />
             </div>
-            <div className='relative  '>
+            <div className='relative  bg-black/50  p-9  '>
                 <div className=' text-center space-y-5 text-white text-md 2xl:text-4xl 2xl:space-y-10'>
                     <h1 className='text-4xl pt-10 2xl:text-7xl font-bold  2xl:pt-28'>Trouver vos illustrations </h1>
                     <p>Beaucoup plus que des illustrations !</p>
@@ -60,13 +62,13 @@ function Home() {
                 </div>
                 <div>  <ul className='flex justify-around  2xl:text-2xl'>
                     <li className='mt-20'>
-                        <NavLink className={liStyle}> <button>Photos </button></NavLink>
+                        <button className={liStyle} onClick={() => setSearchParams({ type: "photo" })}>Photos </button>
                     </li>
                     <li className='mt-20'>
-                        <NavLink className={liStyle}> <button>Vecteurs  </button></NavLink>
+                        <button className={liStyle} onClick={() => setSearchParams({ type: "vecteur" })} >Vecteurs  </button>
                     </li>
                     <li className='mt-20' >
-                        <NavLink className={liStyle}> <button> Illustrations</button></NavLink>
+                        <button className={liStyle} onClick={() => setSearchParams({ type: "illustration" })}> Illustrations</button>
                     </li>
                 </ul></div>
             </div>
