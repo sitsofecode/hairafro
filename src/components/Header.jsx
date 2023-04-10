@@ -1,11 +1,11 @@
 import React from 'react'
 import NavBar from './NavBar'
-import { BiSearchAlt } from 'react-icons/bi'
+// import { BiSearchAlt } from 'react-icons/bi'
 import { Link } from 'react-router-dom'
 
 function Header() {
     return (
-        <div className=' shadow-md'> 
+        <div className=' shadow-md'>
             <div className='flex justify-between text-sm'>
                 <div className='flex'>
                     <Link to="/">

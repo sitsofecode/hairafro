@@ -27,7 +27,7 @@ function Footer() {
                         <div className='space-y-5 text-lg'>
                             <h1 className='text-lg font-semibold underline'> Contact</h1>
                             <div className='space-y-3'>
-                                <p>Call : 01 234 567 89</p>
+                                <p>Telephone : +229 94392436</p>
                                 <p>Email : info@hairafro.com</p>
                                 <SocialMedias/>
                             </div>

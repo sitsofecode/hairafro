@@ -13,7 +13,7 @@ import {
 function IllustrationDetail() {
   const [coiffureDetails, setCoiffureDetails] = useState([])
   const titleStyle = "text-md  flex font-semibold"
-  const paragraphStyle = "text-sm  capitalize mx-2 "
+  const paragraphStyle = "text-sm  capitalize mx-2 mt-1 "
   const params = useParams()
   const [catCoiffure, setCatCoiffure] = useState(null);
   //  const location = useLocation()

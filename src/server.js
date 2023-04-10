@@ -53,6 +53,7 @@ createServer({
             price: "gratuit",
             imageUrl: "/debora illustration site-03.png",
             Cathegorie: "zem",
+            type:"photo"
         });
         server.create("coiffure", {
             id: "7", name: "TENU ZEMIDJAN",
@@ -66,7 +67,7 @@ createServer({
             id: "8", name: "AKOUETE",
             description: "",
             price: "gratuit",
-            imageUrl: "/debora illustration site-05.png",
+            imageUrl: "/Akouete-01.png",
             Cathegorie: "akoute",
             type: "photo"
         });
@@ -327,14 +328,14 @@ createServer({
             type: "vecteur"
         });
 
-        server.create("coiffure", {
-            id: "40", name: "NOM",
-            description: "",
-            price: "gratuit",
-            imageUrl: "/7074358.ai",
-            Cathegorie: "inconnu",
-            type: "vecteur"
-        });
+        // server.create("coiffure", {
+        //     id: "40", name: "NOM",
+        //     description: "",
+        //     price: "gratuit",
+        //     imageUrl: "/7074358.ai",
+        //     Cathegorie: "inconnu",
+        //     type: "vecteur"
+        // });
     },
     routes() {
         this.namespace = "api"

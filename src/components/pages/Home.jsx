@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import {
-    Link,
-    //  useLoaderData, useSearchParams,
-    NavLink, useSearchParams
+    Link, useSearchParams
+    //  useLoaderData,
 } from 'react-router-dom';
 import { BiSearchAlt } from 'react-icons/bi'
 
@@ -13,7 +12,7 @@ function Home() {
     const liStyle = " bg-button/80 hover:bg-white p-3 px-10 rounded-full text-white bg-black/70 font-medium  hover:text-black"
     const [searchParams, setSearchParams] = useSearchParams();
     const typeFilter = searchParams.get('type');
-
+//  const slider = [ { url : ""}]
     const [coiffure, setCoiffure] = useState([])
     useEffect(() => {
         fetch('api/coiffures')
@@ -22,7 +21,8 @@ function Home() {
     }, []);
 
     console.log(typeFilter)
-    const card = coiffure.map((items) => {
+    const coiffureDisplayed = typeFilter ? coiffure.filter(items => items.type?.toLowerCase() === typeFilter) : coiffure
+    const card = coiffureDisplayed?.map((items, index) => {
         return (
             <div key={items.id} className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 rounded-lg shadow-lg">
                 <div className="">
@@ -48,7 +48,7 @@ function Home() {
                 {/* <video autoPlay muted loop className='  w-screen   object-cover' style={{ height: "80vh" }}>
                     <source src="2.mp4" type="video/mp4" />
                 </video> */}
-                <img src='pic3.jpg' alt='' className=' w-screen   object-cover opacity-80' style={{ height: "80vh" }} />
+                <img src='pic2.jpg' alt='' className=' w-screen   object-cover opacity-80' style={{ height: "80vh" }} />
             </div>
             <div className='relative  bg-black/50  p-9  '>
                 <div className=' text-center space-y-5 text-white text-md 2xl:text-4xl 2xl:space-y-10'>
@@ -62,13 +62,13 @@ function Home() {
                 </div>
                 <div>  <ul className='flex justify-around  2xl:text-2xl'>
                     <li className='mt-20'>
-                        <button className={liStyle} onClick={() => setSearchParams({ type: "photo" })}>Photos </button>
+                        <button className={` ${typeFilter === 'photo' ? "bg-white text-button font-bold p-3 px-10 rounded-full " : liStyle}`} onClick={() => setSearchParams({ type: "photo" })}>Photos </button>
                     </li>
                     <li className='mt-20'>
-                        <button className={liStyle} onClick={() => setSearchParams({ type: "vecteur" })} >Vecteurs  </button>
+                        <button className={` ${typeFilter === 'vecteur' ? "bg-white text-button font-bold p-3 px-10 rounded-full " : liStyle}`} onClick={() => setSearchParams({ type: "vecteur" })} >Vecteurs  </button>
                     </li>
                     <li className='mt-20' >
-                        <button className={liStyle} onClick={() => setSearchParams({ type: "illustration" })}> Illustrations</button>
+                        <button className={` ${typeFilter === 'illustration' ? "bg-white text-button font-bold p-3 px-10 rounded-full " : liStyle}`} onClick={() => setSearchParams({ type: "illustration" })}> Illustrations</button>
                     </li>
                 </ul></div>
             </div>

@@ -5,7 +5,7 @@ import Header from './Header'
 function Layout() {
   return (
     <>
-      <Header />
+      <Header className="shadow-lg" />
       <main >
       <Outlet />
       </main>

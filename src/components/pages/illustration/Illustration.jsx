@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { BiSearchAlt } from 'react-icons/bi'
-import { Link, NavLink, useLoaderData, useSearchParams } from 'react-router-dom';
+import {
+  Link,
+  useSearchParams
+} from 'react-router-dom';
+//  NavLink, useLoaderData,
 import { getCoiffure } from '../../api';
 
 
@@ -68,13 +72,13 @@ function Illustration() {
         </div>
         <div>  <ul className='flex justify-around  2xl:text-2xl'>
           <li className='mt-20'>
-            <button className={liStyle} onClick={() => setSearchParams({ type: "photo" })}>Photos </button>
+            <button className={` ${typeFilter === 'photo' ? "bg-white text-button font-bold p-3 px-10 rounded-full " : liStyle}`} onClick={() => setSearchParams({ type: "photo" })}>Photos </button>
           </li>
           <li className='mt-20'>
-            <button className={liStyle} onClick={() => setSearchParams({ type: "vecteur" })} >Vecteurs  </button>
+            <button className={` ${typeFilter === 'vecteur' ? "bg-white text-button font-bold p-3 px-10 rounded-full " : liStyle}`} onClick={() => setSearchParams({ type: "vecteur" })} >Vecteurs  </button>
           </li>
           <li className='mt-20' >
-            <button className={liStyle} onClick={() => setSearchParams({ type: "illustration" })}> Illustrations</button>
+            <button className={` ${typeFilter === 'illustration' ? "bg-white text-button font-bold p-3 px-10 rounded-full " : liStyle}`} onClick={() => setSearchParams({ type: "illustration" })}> Illustrations</button>
           </li>
         </ul></div>
       </div>
