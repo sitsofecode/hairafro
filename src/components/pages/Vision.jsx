@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Vision() {
     return (
-        <section className='h-screen bg-bg2 flex justify-around p-32' >
+        <section className='h-screen  flex justify-around p-32' >
             <div>
                 <h1 className='text-text1 text-6xl font-medium flex ' >
                     Notre vision

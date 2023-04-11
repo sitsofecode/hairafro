@@ -12,7 +12,7 @@ function Home() {
     const liStyle = " bg-button/80 hover:bg-white p-3 px-10 rounded-full text-white bg-black/70 font-medium  hover:text-black"
     const [searchParams, setSearchParams] = useSearchParams();
     const typeFilter = searchParams.get('type');
-//  const slider = [ { url : ""}]
+    //  const slider = [ { url : ""}]
     const [coiffure, setCoiffure] = useState([])
     useEffect(() => {
         fetch('api/coiffures')
@@ -50,26 +50,26 @@ function Home() {
                 </video> */}
                 <img src='pic2.jpg' alt='' className=' w-screen   object-cover opacity-80' style={{ height: "80vh" }} />
             </div>
-            <div className='relative  bg-black/50  p-9  '>
-                <div className=' text-center space-y-5 text-white text-md 2xl:text-4xl 2xl:space-y-10'>
-                    <h1 className='text-4xl pt-10 2xl:text-7xl font-bold  2xl:pt-28'>Trouver vos illustrations </h1>
-                    <p>Beaucoup plus que des illustrations !</p>
-                    <p>Nous proposons une vaste banque d’illustration avec des personnages<br /> (hommes, femmes et enfants portant des coiffures traditionnelles).</p>
+            <div className='relative  bg-black/50  2xl:p-12 p-9  '>
+                <div className=' text-center space-y-5 text-white text-md 2xl:text-xl 2xl:space-y-10'>
+                    <h1 className='text-4xl pt-10 2xl:text-5xl font-bold  2xl:pt-28'>Trouver vos illustrations </h1>
+                    <p >Beaucoup plus que des illustrations !</p>
+                    <p>Nous proposons une vaste banque d’illustrations avec des personnages<br /> (hommes, femmes et enfants portant des coiffures traditionnelles).</p>
                 </div>
-                <div className='flex justify-center mt-10 2xl:mt-20'>
-                    <BiSearchAlt className='text-2xl relative top-3  2xl: left-16 text-gray-400' />
-                    <input className='h-full 2xl:h-24 w-3/4 rounded-full p-3 px-20 placeholder:text-xl 2xl:placeholder:text-3xl shadow-lg outline-none text-xl' placeholder='Recherche...' />
+                <div className='flex justify-center mt-10 '>
+                    <BiSearchAlt className='text-2xl relative top-3  2xl:left-20 2xl:text-3xl 2xl:top-3 2xl:m-1  text-gray-400' />
+                    <input className='h-full 2xl:h-16 w-3/4 rounded-full p-3 px-20 placeholder:text-xl 2xl:placeholder:text-3xl shadow-lg outline-none text-xl' placeholder='Recherche...' />
                 </div>
-                <div>  <ul className='flex justify-around  2xl:text-2xl'>
+                <div>  <ul className='flex justify-center space-x-20  2xl:text-2xl'>
                     <li className='mt-20'>
-                        <button className={` ${typeFilter === 'photo' ? "bg-white text-button font-bold p-3 px-10 rounded-full " : liStyle}`} onClick={() => setSearchParams({ type: "photo" })}>Photos </button>
+                        <button className={` ${typeFilter === 'photo' ? "bg-white text-button font-bold p-3 px-10 rounded-full " : liStyle}`} onClick={() => setSearchParams({ type: "photo" })}>Illustrations </button>
                     </li>
                     <li className='mt-20'>
                         <button className={` ${typeFilter === 'vecteur' ? "bg-white text-button font-bold p-3 px-10 rounded-full " : liStyle}`} onClick={() => setSearchParams({ type: "vecteur" })} >Vecteurs  </button>
                     </li>
-                    <li className='mt-20' >
+                    {/* <li className='mt-20' >
                         <button className={` ${typeFilter === 'illustration' ? "bg-white text-button font-bold p-3 px-10 rounded-full " : liStyle}`} onClick={() => setSearchParams({ type: "illustration" })}> Illustrations</button>
-                    </li>
+                    </li> */}
                 </ul></div>
             </div>
             <div className='2xl:mt-56 my-32 m-10 bg-bg2'>

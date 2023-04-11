@@ -6,11 +6,11 @@ function Footer() {
     const  date =  new Date().getFullYear();
     return (
         <section className='w-full bg-button '>
-            <div className='p-10 flex justify-between'>
+            <div className='lg:p-10 lg:flex justify-between'>
                 <div className='space-y-8 w-2/4'>
                     <div>
 
-                    <h1 className='text-white text-xl font-medium flex ml-0 ' >
+                    <h1 className='text-white text-xl font-medium flex lg:ml-0 ' >
                         Contactez nous<div className='rounded-full p-1 mt-3 h-1 m-2 bg-white'></div>
                     </h1>
                     </div>
@@ -23,8 +23,8 @@ function Footer() {
                 </div>
                 <div className='text-white space-y-8 mx-8 w-3/4 text-lg'>
                     <h1 className='text-lg'>Vous pouvez en savoir plus et aussi apporter votre pierre à l'édifice de ce projet</h1>
-                    <div className='flex  space-x-20'>
-                        <div className='space-y-5 text-lg'>
+                    <div className='lg:flex  lg:space-x-20'>
+                        <div className='space-y-5 text-lg pb-5'>
                             <h1 className='text-lg font-semibold underline'> Contact</h1>
                             <div className='space-y-3'>
                                 <p>Telephone : +229 94392436</p>
@@ -32,7 +32,7 @@ function Footer() {
                                 <SocialMedias/>
                             </div>
                         </div>
-                        <div className='space-y-5 text-sm   '>
+                        <div className='space-y-5 text-sm  pb-5  '>
                             <h1  className='text-lg font-semibold underline'>Address</h1>
                             <div className='space-y-3 '>
                                 <p>Online</p>
