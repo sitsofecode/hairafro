@@ -202,10 +202,10 @@ createServer({
             type: "photo"
         });
         server.create("coiffure", {
-            id: "25", name: "",
+            id: "25", name: "TOISSON FRONTO-OCCIPICALE",
             description: "",
             price: "gratuit",
-            imageUrl: "/cheveux-01.png",
+            imageUrl: "/cheveux-08.png",
             Cathegorie: "cheveux",
             type: "photo"
         });
@@ -302,7 +302,7 @@ createServer({
             description: "",
             price: "gratuit",
             imageUrl: "/Eléments pour la partie vecteurs_Plan de travail 1-17.png",
-            Cathegorie: "inconnu",
+            Cathegorie: "lieu",
             type: "vecteur"
         });
         server.create("coiffure", {
