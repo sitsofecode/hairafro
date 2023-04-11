@@ -18,10 +18,10 @@ function Header() {
                 <div className='m-4 flex'>
                     {/* <button className='text-gray-500'><BiSearchAlt className='text-3xl' /></button> */}
                     <button className='mx-6 bg-bg1 p-2 px-4 rounded-lg font-semibold'>
-                        Log in
+                        Se connecter
                     </button>
                     <button className='bg-button text-white p-2 px-4 rounded-lg font-semibold'>
-                        Sign up
+                        S'inscrire  
                     </button>
                 </div>
             </div>
