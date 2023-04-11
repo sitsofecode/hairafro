@@ -18,10 +18,12 @@ function Illustration() {
   const typeFilter = searchParams.get('type');
   const [coiffure, setCoiffure] = useState([])
   // const coiffure = useLoaderData()
+  const [query , setQuery ] = useState(searchParams.get('name'))
+
 
   console.log(typeFilter);
   useEffect(() => {
-    fetch('api/coiffures')
+    fetch(  query ? `/search/${query}` :'api/coiffures')
       .then(response => response.json())
       .then(data => setCoiffure(data.coiffures))
   }, []);
@@ -68,7 +70,7 @@ function Illustration() {
         </div>
         <div className='flex justify-center mt-10 '>
           <BiSearchAlt className='text-2xl relative top-3  left-20 2xl:left-20 2xl:text-3xl 2xl:top-3 2xl:m-1  text-gray-400' />
-          <input className='h-full 2xl:h-16 w-3/4 rounded-full p-3 px-20 placeholder:text-xl 2xl:placeholder:text-3xl shadow-lg outline-none text-xl' placeholder='Recherche...' />
+          <input value = {query} className='h-full 2xl:h-16 w-3/4 rounded-full p-3 px-20 placeholder:text-xl 2xl:placeholder:text-3xl shadow-lg outline-none text-xl' placeholder='Recherche...' />
         </div>
         <div>  <ul className='flex justify-around  2xl:text-2xl'>
           <li className='mt-20'>

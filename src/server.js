@@ -186,7 +186,7 @@ createServer({
             type: "vecteur"
         });
         server.create("coiffure", {
-            id: "23", name: "PORTE DU NON RETOUR",
+            id: "23", name: "PORTE DU RETOUR",
             description: "",
             price: "gratuit",
             imageUrl: "/porteNonRetour.png",
@@ -218,7 +218,7 @@ createServer({
             type: "vecteur"
         });
         server.create("coiffure", {
-            id: "27", name: "BORD DE LA VOIX",
+            id: "27", name: "BORD DE LA VOIE",
             description: "",
             price: "gratuit",
             imageUrl: "/Eléments pour la partie vecteurs_Plan de travail 1-08.png",
@@ -274,7 +274,7 @@ createServer({
             type: "photo"
         });
         server.create("coiffure", {
-            id: "34", name: "BORD DE LA VOIS",
+            id: "34", name: "BORD DE LA VOIE",
             description: "",
             price: "gratuit",
             imageUrl: "/Eléments pour la partie vecteurs_Plan de travail 1-14.png",
