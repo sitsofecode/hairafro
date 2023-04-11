@@ -31,7 +31,7 @@ function Home() {
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-button/40 group-hover:from-button/70 group-hover:via-button/60 group-hover:to-button/70"></div>
                 <div className="absolute inset-0 flex 2xl:translate-y-[50%] translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
                     <h1 className="font-dmserif text-xl font-bold text-white">{items.name}</h1>
-                    <p className="mb-3 text-lg  text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
+                    <p className="mb-3 text-lg  text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"></p>
                     <Link to={`illustration/${items.id}`}
                     //    state={{ search: searchParams.toString(), type: typeFilter }}    
                     >
