@@ -56,10 +56,10 @@ createServer({
             type: "photo"
         });
         server.create("coiffure", {
-            id: "7", name: "TENU ZEMIDJAN",
+            id: "7", name: "TABOURET",
             description: "",
             price: "gratuit",
-            imageUrl: "/habitzem-04.png",
+            imageUrl: "/tabouret.png",
             Cathegorie: "zem",
             type: "photo"
         });
@@ -104,14 +104,14 @@ createServer({
             Cathegorie: "fulani",
             type: "photo"
         });
-        server.create("coiffure", {
-            id: "13", name: "AYONOUDA",
-            description: "Ayonouda de la famille des cornrows appelée en français nattes collées, l'aspect des cheveux à trois brins, directement sur le cuir chevelu.",
-            price: "gratuit",
-            imageUrl: "/Ayonouda-06.png",
-            Cathegorie: "ayonouda",
-            type: "photo"
-        });
+        // server.create("coiffure", {
+        //     id: "13", name: "AYONOUDA",
+        //     description: "Ayonouda de la famille des cornrows appelée en français nattes collées, l'aspect des cheveux à trois brins, directement sur le cuir chevelu.",
+        //     price: "gratuit",
+        //     imageUrl: "/Ayonouda-06.png",
+        //     Cathegorie: "ayonouda",
+        //     type: "photo"
+        // });
 
         server.create("coiffure", {
             id: "14", name: "PARASOL",
@@ -121,14 +121,14 @@ createServer({
             Cathegorie: "objet",
             type: "vecteur"
         });
-        server.create("coiffure", {
-            id: "15", name: "AYONOUDA ",
-            description: "Ayonouda de la famille des cornrows appelée en français nattes collées, l'aspect des cheveux à trois brins, directement sur le cuir chevelu.",
-            price: "gratuit",
-            imageUrl: "/Ayonouda-05.png",
-            Cathegorie: "ayonou",
-            type: "photo"
-        });
+        // server.create("coiffure", {
+        //     id: "15", name: "AYONOUDA ",
+        //     description: "Ayonouda de la famille des cornrows appelée en français nattes collées, l'aspect des cheveux à trois brins, directement sur le cuir chevelu.",
+        //     price: "gratuit",
+        //     imageUrl: "/Ayonouda-05.png",
+        //     Cathegorie: "ayonou",
+        //     type: "photo"
+        // });
         server.create("coiffure", {
             id: "16", name: "Sceau",
             description: "",
@@ -137,14 +137,14 @@ createServer({
             Cathegorie: "objet",
             type: "vecteur"
         });
-        server.create("coiffure", {
-            id: "17", name: "ATIN",
-            description: "Les tresses au fil (ATIN) encore appelées Eko , Bridge, Akule , Sungasont une technique de coiffage adoptée depuis des siècles par les femmes noires, elles représentent les cheveux enroulés d'un fil de couture ou de nylon.L'utilisation des fils pour tresser les cheveux est courante chez les Yoruba du sud Ouest du Nigeria au Benin.Utilisé pour l'assouplissement des cheveux, il sert aussi d'isolant pour l'eau et les protège contre la casse.",
-            price: "gratuit",
-            imageUrl: "/atin-06.png",
-            Cathegorie: "atin",
-            type: "photo"
-        });
+        // server.create("coiffure", {
+        //     id: "17", name: "ATIN",
+        //     description: "Les tresses au fil (ATIN) encore appelées Eko , Bridge, Akule , Sungasont une technique de coiffage adoptée depuis des siècles par les femmes noires, elles représentent les cheveux enroulés d'un fil de couture ou de nylon.L'utilisation des fils pour tresser les cheveux est courante chez les Yoruba du sud Ouest du Nigeria au Benin.Utilisé pour l'assouplissement des cheveux, il sert aussi d'isolant pour l'eau et les protège contre la casse.",
+        //     price: "gratuit",
+        //     imageUrl: "/atin-06.png",
+        //     Cathegorie: "atin",
+        //     type: "photo"
+        // });
         server.create("coiffure", {
             id: "18", name: "Pain",
             description: "",
@@ -193,14 +193,14 @@ createServer({
             Cathegorie: "lieu",
             type: "vecteur"
         });
-        server.create("coiffure", {
-            id: "24", name: "HOMEDA",
-            description: "Cornrows appelée Homeda en Fongbé sont  des tresses qui sont à plat contre le cuir chevelu et favorise la poussée des cheveux . Elles peuvent représenter la beauté et l'identité culturelle. En français, elles qui signifient à 'l'intérieur'  qui décrit son aspect.",
-            price: "gratuit",
-            imageUrl: "/homeda-05.png",
-            Cathegorie: "homeda",
-            type: "photo"
-        });
+        // server.create("coiffure", {
+        //     id: "24", name: "HOMEDA",
+        //     description: "Cornrows appelée Homeda en Fongbé sont  des tresses qui sont à plat contre le cuir chevelu et favorise la poussée des cheveux . Elles peuvent représenter la beauté et l'identité culturelle. En français, elles qui signifient à 'l'intérieur'  qui décrit son aspect.",
+        //     price: "gratuit",
+        //     imageUrl: "/homeda-05.png",
+        //     Cathegorie: "homeda",
+        //     type: "photo"
+        // });
         server.create("coiffure", {
             id: "25", name: "TOISSON FRONTO-OCCIPICALE",
             description: "",
