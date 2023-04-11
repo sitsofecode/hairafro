@@ -12,12 +12,12 @@ function Article() {
       </div>
       <div className='  justify-between  space-x-20  shadow-md   lg:p-10 rounded-lg'>
         <div className='flex space-x-2 items-center justify-center'>
-          <img src="/rihanna2.png" alt="" className='h-72' />
-          <img src=' /rihanna3.jpg' alt='' className='h-72' />
-          <img src=' /rihanna4.jpg' alt='' className='h-72' />
-          <img src=' /rihanna-fulani.png' alt='' className='h-72' />
+          <img src="/rihanna2.png" alt="" className='h-72 2xl:h-80' />
+          <img src=' /rihanna3.jpg' alt='' className='h-72 2xl:h-80' />
+          <img src=' /rihanna4.jpg' alt='' className='h-72 2xl:h-80' />
+          <img src=' /rihanna-fulani.png' alt='' className='h-72 2xl:h-80' />
         </div>
-        <div className='space-y-5 '>
+        <div className='space-y-5 mx-10'>
           <h1 className='text-xl font-semibold '>
             4 coiffures traditionnelles africaines qui ont inspirées des <br />coiffures modernes
           </h1>
@@ -30,7 +30,7 @@ function Article() {
             Cette une coiffure protectrice, qui protège les pointes de vos cheveux et permet d’obtenir des boucles bien définies une fois retirées. .</p>
 
           <h1 className='text-lg'>Les tresses au fil </h1>
-          <p className='text-sm'>Les tresses au fil sont typiquement originaires de l’Afrique de l’Ouest, plus précisément du Nigéria et aussi du Bénin. Appelée « Irun Kiko » par les yoruba et « Ati » par les fon, il s’agit d’une coiffure consistant à enrouler les cheveux avec des fils. On utilise généralement, des fils de couture, ou encore des fils de nylon.
+          <p className='text-sm'>Les tresses au fil sont typiquement originaires de l’Afrique de l’Ouest, plus précisément du Nigéria et aussi du Bénin. Appelée « Irun Kiko » par les yoruba et « Atin » par les fon, il s’agit d’une coiffure consistant à enrouler les cheveux avec des fils. On utilise généralement, des fils de couture, ou encore des fils de nylon.
             Selon certaines femmes, c’est la meilleure des coiffures protectrices, car elle favorise l’assouplissement, et l’étirement des cheveux crépus afin d’en réduire le shrinkage. La version moderne de cette coiffure consiste à utiliser de la laine au lieu des fils de couture, et même ajouter des mèches.</p>
 
           <h1 className='text-lg'>Les nattes</h1>

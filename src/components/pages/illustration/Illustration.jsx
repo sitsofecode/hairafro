@@ -60,7 +60,7 @@ function Illustration() {
                 </video> */}
         <img src='/BACKSITE.png' alt='' className='w-screen opacity-80 object-cover' style={{ height: "80vh" }} />
       </div>
-      <div className='relative  bg-black/50  2xl:p-12 p-12  '>
+      <div className='relative  bg-black/50  2xl:p-12 p-12  ' style={{ height: "80vh" }}>
         <div className=' text-center space-y-5 text-white text-md 2xl:text-xl 2xl:space-y-10'>
           <h1 className='text-4xl pt-10 2xl:text-5xl font-bold  2xl:pt-28'>Trouver vos illustrations </h1>
           <p >Beaucoup plus que des illustrations !</p>
