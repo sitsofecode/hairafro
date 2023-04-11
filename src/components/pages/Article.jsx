@@ -18,7 +18,7 @@ function Article() {
           <img src=' /rihanna-fulani.png' alt='' className='h-72 2xl:h-80' />
         </div>
         <div className='space-y-5 m-10'>
-          <h1 className='text-xl font-semibold  '>
+          <h1 className='text-xl font-semibold text-center '>
             4 coiffures traditionnelles africaines qui ont inspirées des coiffures modernes
           </h1>
           <p className='text-sm'>Véritable symbole de statut social ou encore armes de séduction dans certains pays de l’Afrique de l’Ouest,
