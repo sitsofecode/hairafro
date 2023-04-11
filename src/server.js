@@ -8,8 +8,8 @@ createServer({
     seeds(server) {
         server.create("coiffure", {
             id: 1, name: "DOKO",
-            description: "",
-            imageUrl: "/illustratration-01.jpg",
+            description: "Doko appelé petits choux, de la famille des Bantu Knots est une coiffure africaine souvent faite aux enfants pour protéger leur tête. Ils se font avec les chouchous, cordes ou des élastiques",
+            imageUrl: "/doko-02.png",
             price: "gratuit",
             Cathegorie: "doko",
             type: "photo"
@@ -17,17 +17,17 @@ createServer({
 
         server.create("coiffure", {
             id: "2", name: "AYONOUDA",
-            description: "",
+            description: "Ayonouda de la famille des cornrows appelée en français nattes collées, l'aspect des cheveux à trois brins, directement sur le cuir chevelu.",
             price: "gratuit",
-            imageUrl: "/illustratration-03.jpg",
+            imageUrl: "/Ayonduda-02.png",
             Cathegorie: "ayonou",
             type: "photo"
         })
         server.create("coiffure", {
             id: "3", name: "ATIN",
-            description: "",
+            description: " Les tresses au fil (ATIN) encore appelées Eko , Bridge, Akule , Sungasont une technique de coiffage adoptée depuis des siècles par les femmes noires, elles représentent les cheveux enroulés d'un fil de couture ou de nylon.L'utilisation des fils pour tresser les cheveux est courante chez les Yoruba du sud Ouest du Nigeria au Benin.Utilisé pour l'assouplissement des cheveux, il sert aussi d'isolant pour l'eau et les protège contre la casse.",
             price: "gratuit",
-            imageUrl: "/illustratration-02.jpg",
+            imageUrl: "/Atin-02.png",
             Cathegorie: "atin",
             type: "photo"
         })
@@ -35,268 +35,270 @@ createServer({
             id: "4", name: "HOMEDA ",
             description: "",
             price: "gratuit",
-            imageUrl: "/illustratration-04.jpg",
+            imageUrl: "/Homeda-02.png",
             Cathegorie: "homoeda",
             type: "photo"
         });
         server.create("coiffure", {
             id: "5", name: "HOMEDA ",
-            description: "",
+            description: "Cornrows appelée Homeda en Fongbé sont  des tresses qui sont à plat contre le cuir chevelu et favorise la poussée des cheveux . Elles peuvent représenter la beauté et l'identité culturelle. En français, elles qui signifient à 'l'intérieur'  qui décrit son aspect.",
             price: "gratuit",
-            imageUrl: "/debora illustration site-02.png",
+            imageUrl: "/Homeda-01.png",
             Cathegorie: "homeda",
             type: "photo"
         });
         server.create("coiffure", {
-            id: "6", name: "ZEMIDJAN",
-            description: "",
+            id: "6", name: "ATIN",
+            description: "Les tresses au fil (ATIN) encore appelées Eko , Bridge, Akule , Sungasont une technique de coiffage adoptée depuis des siècles par les femmes noires, elles représentent les cheveux enroulés d'un fil de couture ou de nylon.L'utilisation des fils pour tresser les cheveux est courante chez les Yoruba du sud Ouest du Nigeria au Benin.Utilisé pour l'assouplissement des cheveux, il sert aussi d'isolant pour l'eau et les protège contre la casse.",
             price: "gratuit",
-            imageUrl: "/debora illustration site-03.png",
-            Cathegorie: "zem",
-            type:"photo"
+            imageUrl: "/Atin-01.png",
+            Cathegorie: "atin",
+            type: "photo"
         });
         server.create("coiffure", {
             id: "7", name: "TENU ZEMIDJAN",
             description: "",
             price: "gratuit",
-            imageUrl: "/debora illustration site-04.png",
+            imageUrl: "/habitzem-04.png",
             Cathegorie: "zem",
             type: "photo"
         });
         server.create("coiffure", {
             id: "8", name: "AKOUETE",
-            description: "",
+            description: "Akouete en français, nœuds bantous : Les nœuds bantous sont de petits nœuds enroulés souvent portés par les femmes au Bénin. Ces nœuds représentent l'unité et la communauté.",
             price: "gratuit",
-            imageUrl: "/Akouete-01.png",
+            imageUrl: "/Akouete-04.png",
             Cathegorie: "akoute",
             type: "photo"
         });
         server.create("coiffure", {
-            id: "9", name: "NOM",
-            description: "",
+            id: "9", name: "DOKO",
+            description: "Doko appelé petits choux, de la famille des Bantu Knots est une coiffure africaine souvent faite aux enfants pour protéger leur tête. Ils se font avec les chouchous, cordes ou des élastiques",
             price: "gratuit",
-            imageUrl: "/debora illustration site-07.png",
-            Cathegorie: "inconnu",
+            imageUrl: "/doko-03.png",
+            Cathegorie: "doko",
             type: "photo"
         });
+
         server.create("coiffure", {
-            id: "10", name: "NOM",
-            description: "",
+            id: "10", name: "HOMEDA",
+            description: 'Cornrows appelée Homeda en Fongbé sont  des tresses qui sont à plat contre le cuir chevelu et favorise la poussée des cheveux . Elles peuvent représenter la beauté et l\'identité culturelle. En français, elles qui signifient à "l\'intérieur"  qui décrit son aspect.',
             price: "gratuit",
-            imageUrl: "/Eléments pour la partie vecteurs_Plan de travail 1-06.png",
-            Cathegorie: "inconnu",
-            type: "vecteur"
-        });
-        server.create("coiffure", {
-            id: "11", name: "NOM",
-            description: "",
-            price: "gratuit",
-            imageUrl: "/debora illustration site-08.png",
-            Cathegorie: "inconnu",
-            type: "photo"
-        });
-        server.create("coiffure", {
-            id: "12", name: "NOM",
-            description: "",
-            price: "gratuit",
-            imageUrl: "/debora illustration site-09.png",
-            Cathegorie: "inconnue",
-            type: "photo"
-        });
-        server.create("coiffure", {
-            id: "13", name: "NOM",
-            description: "",
-            price: "gratuit",
-            imageUrl: "/Eléments pour la partie vecteurs_Plan de travail 1-22.png",
-            Cathegorie: "inconnu",
-            type: "vecteur"
-        });
-        server.create("coiffure", {
-            id: "14", name: "NOM",
-            description: "",
-            price: "gratuit",
-            imageUrl: "/debora illustration site-10.png",
-            Cathegorie: "inconnue",
-            type: "photo"
-        });
-        server.create("coiffure", {
-            id: "15", name: "AYONOUDA ",
-            description: "",
-            price: "gratuit",
-            imageUrl: "/ilustration memory-02.png",
-            Cathegorie: "ayonou",
-            type: "photo"
-        });
-        server.create("coiffure", {
-            id: "16", name: "NOM",
-            description: "",
-            price: "gratuit",
-            imageUrl: "/Eléments pour la partie vecteurs_Plan de travail 1-02.png",
-            Cathegorie: "inconnu",
-            type: "vecteur"
-        });
-        server.create("coiffure", {
-            id: "17", name: "HOMEDA ",
-            description: "",
-            price: "gratuit",
-            imageUrl: "/ilustration memory-03.png",
+            imageUrl: "/Homeda-03.png",
             Cathegorie: "homeda",
             type: "photo"
         });
         server.create("coiffure", {
-            id: "18", name: "NOM",
+            id: "11", name: "ZEMIDJAN",
             description: "",
             price: "gratuit",
-            imageUrl: "/Eléments pour la partie vecteurs_Plan de travail 1-03.png",
-            Cathegorie: "inconnu",
-            type: "vecteur"
-        });
-        server.create("coiffure", {
-            id: "19", name: "NOM",
-            description: "",
-            price: "gratuit",
-            imageUrl: "/Eléments pour la partie vecteurs_Plan de travail 1-04.png",
-            Cathegorie: "inconnu",
-            type: "vecteur"
-        });
-        server.create("coiffure", {
-            id: "20", name: "HOMEDA",
-            description: "",
-            price: "gratuit",
-            imageUrl: "/ilustration memory-04.png",
-            Cathegorie: "doko789",
+            imageUrl: "/zem.png",
+            Cathegorie: "zem",
             type: "photo"
         });
         server.create("coiffure", {
-            id: "21", name: "Nom",
-            description: "",
+            id: "12", name: "FULANI",
+            description: "Fulani appelé Tresses peules. Ces tresses sont généralement réalisées en zigzag et sont décorées de perles et de cauris. Au Bénin, les tresses peules sont considérées comme un symbole de beauté et de féminité.",
             price: "gratuit",
-            imageUrl: "/ilustration memory-05.png",
-            Cathegorie: "inconnue",
+            imageUrl: "/fulani-03.png",
+            Cathegorie: "fulani",
             type: "photo"
         });
         server.create("coiffure", {
-            id: "22", name: "NOM",
+            id: "13", name: "AYONOUDA",
+            description: "Ayonouda de la famille des cornrows appelée en français nattes collées, l'aspect des cheveux à trois brins, directement sur le cuir chevelu.",
+            price: "gratuit",
+            imageUrl: "/Ayonouda-06.png",
+            Cathegorie: "ayonouda",
+            type: "photo"
+        });
+
+        server.create("coiffure", {
+            id: "14", name: "PARASOL",
             description: "",
             price: "gratuit",
-            imageUrl: "/Eléments pour la partie vecteurs_Plan de travail 1-05.png",
-            Cathegorie: "inconnu",
+            imageUrl: "/parasol.png",
+            Cathegorie: "objet",
             type: "vecteur"
         });
         server.create("coiffure", {
-            id: "23", name: "DOKO ",
-            description: "",
+            id: "15", name: "AYONOUDA ",
+            description: "Ayonouda de la famille des cornrows appelée en français nattes collées, l'aspect des cheveux à trois brins, directement sur le cuir chevelu.",
             price: "gratuit",
-            imageUrl: "/ilustration memory-06.png",
-            Cathegorie: "doko",
+            imageUrl: "/Ayonouda-05.png",
+            Cathegorie: "ayonou",
             type: "photo"
         });
         server.create("coiffure", {
-            id: "24", name: "NOM",
+            id: "16", name: "Sceau",
             description: "",
             price: "gratuit",
-            imageUrl: "/Eléments pour la partie vecteurs_Plan de travail 1-07.png",
-            Cathegorie: "inconnu",
+            imageUrl: "/sceau.png",
+            Cathegorie: "objet",
             type: "vecteur"
         });
         server.create("coiffure", {
-            id: "25", name: "ATIN",
-            description: "",
+            id: "17", name: "ATIN",
+            description: "Les tresses au fil (ATIN) encore appelées Eko , Bridge, Akule , Sungasont une technique de coiffage adoptée depuis des siècles par les femmes noires, elles représentent les cheveux enroulés d'un fil de couture ou de nylon.L'utilisation des fils pour tresser les cheveux est courante chez les Yoruba du sud Ouest du Nigeria au Benin.Utilisé pour l'assouplissement des cheveux, il sert aussi d'isolant pour l'eau et les protège contre la casse.",
             price: "gratuit",
-            imageUrl: "/ilustration memory-07.png",
+            imageUrl: "/atin-06.png",
             Cathegorie: "atin",
             type: "photo"
         });
         server.create("coiffure", {
-            id: "26", name: "AYONOUDA ",
+            id: "18", name: "Pain",
             description: "",
             price: "gratuit",
-            imageUrl: "/ilustration memory-08.png",
-            Cathegorie: "ayonou",
-            type: "photo"
-        });
-        server.create("coiffure", {
-            id: "27", name: "NOM",
-            description: "",
-            price: "gratuit",
-            imageUrl: "/Eléments pour la partie vecteurs_Plan de travail 1-08.png",
-            Cathegorie: "inconnu",
+            imageUrl: "/Eléments pour la partie vecteurs_Plan de travail 1-03.png",
+            Cathegorie: "foods",
             type: "vecteur"
         });
         server.create("coiffure", {
-            id: "28", name: "HOMEDA ",
+            id: "19", name: "Atin",
+            description: "Les tresses au fil (ATIN) encore appelées Eko , Bridge, Akule , Sungasont une technique de coiffage adoptée depuis des siècles par les femmes noires, elles représentent les cheveux enroulés d'un fil de couture ou de nylon.L'utilisation des fils pour tresser les cheveux est courante chez les Yoruba du sud Ouest du Nigeria au Benin.Utilisé pour l'assouplissement des cheveux, il sert aussi d'isolant pour l'eau et les protège contre la casse.",
+            price: "gratuit",
+            imageUrl: "/atin.png",
+            Cathegorie: "atin",
+            type: "photo"
+        });
+        server.create("coiffure", {
+            id: "20", name: "CARTE DU BENIN",
             description: "",
             price: "gratuit",
-            imageUrl: "/ilustration memory-09.png",
+            imageUrl: "/carteBenin.png",
+            Cathegorie: "lieu",
+            type: "vecteur"
+        });
+        server.create("coiffure", {
+            id: "21", name: "ETOILE ROUGE",
+            description: "",
+            price: "gratuit",
+            imageUrl: "/etoileRouge.png",
+            Cathegorie: "lieu",
+            type: "vecteur"
+        });
+        server.create("coiffure", {
+            id: "22", name: "TATASOMBA",
+            description: "",
+            price: "gratuit",
+            imageUrl: "/tataSomba.png",
+            Cathegorie: "lieu",
+            type: "vecteur"
+        });
+        server.create("coiffure", {
+            id: "23", name: "PORTE DU NON RETOUR",
+            description: "",
+            price: "gratuit",
+            imageUrl: "/porteNonRetour.png",
+            Cathegorie: "lieu",
+            type: "vecteur"
+        });
+        server.create("coiffure", {
+            id: "24", name: "HOMEDA",
+            description: "Cornrows appelée Homeda en Fongbé sont  des tresses qui sont à plat contre le cuir chevelu et favorise la poussée des cheveux . Elles peuvent représenter la beauté et l'identité culturelle. En français, elles qui signifient à 'l'intérieur'  qui décrit son aspect.",
+            price: "gratuit",
+            imageUrl: "/homeda-05.png",
             Cathegorie: "homeda",
             type: "photo"
         });
         server.create("coiffure", {
-            id: "29", name: "NOM",
+            id: "25", name: "",
             description: "",
             price: "gratuit",
-            imageUrl: "/Eléments pour la partie vecteurs_Plan de travail 1-09.png",
-            Cathegorie: "inconnu",
+            imageUrl: "/cheveux-01.png",
+            Cathegorie: "cheveux",
+            type: "photo"
+        });
+        server.create("coiffure", {
+            id: "26", name: "OUIDAH",
+            description: "",
+            price: "gratuit",
+            imageUrl: "/ouidah.png",
+            Cathegorie: "lieu",
             type: "vecteur"
         });
         server.create("coiffure", {
-            id: "30", name: "NOM",
+            id: "27", name: "BORD DE LA VOIX",
+            description: "",
+            price: "gratuit",
+            imageUrl: "/Eléments pour la partie vecteurs_Plan de travail 1-08.png",
+            Cathegorie: "lieu",
+            type: "vecteur"
+        });
+        server.create("coiffure", {
+            id: "28", name: "RUELLE",
+            description: "",
+            price: "gratuit",
+            imageUrl: "/Eléments pour la partie vecteurs_Plan de travail 1-18.png",
+            Cathegorie: "lieu",
+            type: "vecteur"
+        });
+        server.create("coiffure", {
+            id: "29", name: "HOMEDA",
+            description: "Cornrows appelée Homeda en Fongbé sont  des tresses qui sont à plat contre le cuir chevelu et favorise la poussée des cheveux . Elles peuvent représenter la beauté et l'identité culturelle. En français, elles qui signifient à \"l'intérieur\"  qui décrit son aspect.",
+            price: "gratuit",
+            imageUrl: "/Homeda-01.png",
+            Cathegorie: "homeda",
+            type: "photo"
+        });
+        server.create("coiffure", {
+            id: "30", name: "Marmite",
             description: "",
             price: "gratuit",
             imageUrl: "/Eléments pour la partie vecteurs_Plan de travail 1-10.png",
-            Cathegorie: "inconnu",
+            Cathegorie: "objet",
             type: "vecteur"
         });
         server.create("coiffure", {
-            id: "31", name: "NOM",
+            id: "31", name: "CASSEROLE",
             description: "",
             price: "gratuit",
             imageUrl: "/Eléments pour la partie vecteurs_Plan de travail 1-11.png",
-            Cathegorie: "inconnu",
+            Cathegorie: "objet",
             type: "vecteur"
         });
         server.create("coiffure", {
-            id: "32", name: "NOM",
+            id: "32", name: "BIBLIOTHEQUE",
             description: "",
             price: "gratuit",
             imageUrl: "/Eléments pour la partie vecteurs_Plan de travail 1-12.png",
-            Cathegorie: "inconnu",
+            Cathegorie: "lieu",
             type: "vecteur"
         });
         server.create("coiffure", {
-            id: "33", name: "NOM",
-            description: "",
+            id: "33", name: "AKOUETE",
+            description: "Akouete en français, nœuds bantous : Les nœuds bantous sont de petits nœuds enroulés souvent portés par les femmes au Bénin. Ces nœuds représentent l'unité et la communauté.",
             price: "gratuit",
-            imageUrl: "/Eléments pour la partie vecteurs_Plan de travail 1-13.png",
-            Cathegorie: "inconnu",
-            type: "vecteur"
+            imageUrl: "/Akouete-02.png",
+            Cathegorie: "akouete",
+            type: "photo"
         });
         server.create("coiffure", {
-            id: "34", name: "NOM",
+            id: "34", name: "BORD DE LA VOIS",
             description: "",
             price: "gratuit",
             imageUrl: "/Eléments pour la partie vecteurs_Plan de travail 1-14.png",
-            Cathegorie: "inconnu",
+            Cathegorie: "lieu",
             type: "vecteur"
         });
         server.create("coiffure", {
-            id: "35", name: "NOM",
-            description: "",
+            id: "35", name: "AKOUETE",
+            description: "Akouete en français, nœuds bantous : Les nœuds bantous sont de petits nœuds enroulés souvent portés par les femmes au Bénin. Ces nœuds représentent l'unité et la communauté.",
             price: "gratuit",
-            imageUrl: "/Eléments pour la partie vecteurs_Plan de travail 1-15.png",
-            Cathegorie: "inconnu",
-            type: "vecteur"
+            imageUrl: "/Akouete-04.png",
+            Cathegorie: "akouete",
+            type: "photo"
         });
         server.create("coiffure", {
-            id: "36", name: "NOM",
-            description: "",
+            id: "36", name: "AYONOUDA",
+            description: "Ayonouda de la famille des cornrows appelée en français nattes collées, l'aspect des cheveux à trois brins, directement sur le cuir chevelu.",
             price: "gratuit",
-            imageUrl: "/Eléments pour la partie vecteurs_Plan de travail 1-16.png",
-            Cathegorie: "inconnu",
-            type: "vecteur"
+            imageUrl: "/Ayonduda-01.png",
+            Cathegorie: "ayonouda",
+            type: "photo"
         });
         server.create("coiffure", {
-            id: "37", name: "NOM",
+            id: "37", name: "Eglise",
             description: "",
             price: "gratuit",
             imageUrl: "/Eléments pour la partie vecteurs_Plan de travail 1-17.png",
@@ -304,30 +306,61 @@ createServer({
             type: "vecteur"
         });
         server.create("coiffure", {
-            id: "38", name: "NOM",
+            id: "38", name: "FULANI",
+            description: "Fulani appelé Tresses peules. Ces tresses sont généralement réalisées en zigzag et sont décorées de perles et de cauris. Au Bénin, les tresses peules sont considérées comme un symbole de beauté et de féminité.",
+            price: "gratuit",
+            imageUrl: "/fulani-02.png",
+            Cathegorie: "fulani",
+            type: "photo"
+        });
+        server.create("coiffure", {
+            id: "39", name: "COLIS D'UNE VENDEUSE",
             description: "",
             price: "gratuit",
-            imageUrl: "/Eléments pour la partie vecteurs_Plan de travail 1-18.png",
+            imageUrl: "/Eléments pour la partie vecteurs_Plan de travail 1-02.png",
             Cathegorie: "inconnu",
             type: "vecteur"
         });
         server.create("coiffure", {
-            id: "39", name: "NOM",
+            id: "40", name: "POUBEL",
             description: "",
             price: "gratuit",
-            imageUrl: "/Eléments pour la partie vecteurs_Plan de travail 1-19.png",
+            imageUrl: "/poubel.png",
             Cathegorie: "inconnu",
             type: "vecteur"
         });
         server.create("coiffure", {
-            id: "40", name: "NOM",
+            id: "41", name: "DOKO",
+            description: "Doko appelé petits choux, de la famille des Bantu Knots est une coiffure africaine souvent faite aux enfants pour protéger leur tête. Ils se font avec les chouchous, cordes ou des élastiques",
+            price: "gratuit",
+            imageUrl: "/Doko.png",
+            Cathegorie: "doko",
+            type: "photo"
+        });
+        server.create("coiffure", {
+            id: "42", name: "DOKO",
+            description: "Doko appelé petits choux, de la famille des Bantu Knots est une coiffure africaine souvent faite aux enfants pour protéger leur tête. Ils se font avec les chouchous, cordes ou des élastiques",
+            price: "gratuit",
+            imageUrl: "/doko-01.png",
+            Cathegorie: "doko",
+            type: "photo"
+        });
+        server.create("coiffure", {
+            id: "43", name: "STATUT ",
             description: "",
             price: "gratuit",
-            imageUrl: "/Eléments pour la partie vecteurs_Plan de travail 1-20.png",
-            Cathegorie: "inconnu",
+            imageUrl: "/statut.png",
+            Cathegorie: "lieu",
             type: "vecteur"
         });
-
+        server.create("coiffure", {
+            id: "44", name: "TABOURET",
+            description: "",
+            price: "gratuit",
+            imageUrl: "/tabouret.png",
+            Cathegorie: "objet",
+            type: "vecteur"
+        });
         // server.create("coiffure", {
         //     id: "40", name: "NOM",
         //     description: "",

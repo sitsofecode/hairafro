@@ -33,7 +33,7 @@ function Illustration() {
       <Link to={items.id} key={index}
         state={{ search: searchParams.toString(), type: typeFilter }}
       >
-        <div key={items.id} className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 rounded-lg shadow-lg">
+        <div key={items.id} className="group  relative cursor-pointer items-center justify-center m-auto overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 rounded-lg shadow-lg">
           <div className="">
             <img className="h-full w-full object-cover transition-transform duration-500  group-hover:scale-125" src={items.imageUrl} alt="" />
           </div>
@@ -90,7 +90,7 @@ function Illustration() {
         </div>
         <p className='text-center my-10'>Ces prototypes font parti d'une première phase expérimentale
         </p>
-        <div className='grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 m-10'>
+        <div className='grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 m-10 '>
           {card}
         </div>
       </div></section>

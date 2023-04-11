@@ -43,6 +43,7 @@ function IllustrationDetail() {
   const card = catCoiffure?.map((items) => {
     return (
       <Link to={items.id}
+      onClick={() => navigate(-1)}
       //  state={{ search: searchParams.toString(), type: typeFilter }}
       >
         <div key={items.id} className='group h-72 relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl  rounded-lg shadow-lg'>
@@ -78,10 +79,7 @@ function IllustrationDetail() {
             <div>
               <h1 className='text-center text-xl font-semibold m-4'> {coiffureDetails.name}</h1>
               <p className='text-sm'>
-                Les tresses au fil (ATIN) encore appelées Eko , Bridge, Akule , Sunga
-                sont une technique de coiffage adoptée depuis des siècles par les femmes noires, elles représentent les cheveux enroulés d'un fil de couture ou de nylon.
-                L'utilisation des fils pour tresser les cheveux est courante chez les Yoruba du sud Ouest du Nigeria au Benin.
-                Utilisé pour l'assouplissement des cheveux, il sert aussi d'isolant pour l'eau et les protège contre la casse.
+                {coiffureDetails.description}
               </p>
             </div>
             <div className='flex'>
@@ -116,7 +114,7 @@ function IllustrationDetail() {
       </p>
       <div className='grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 m-10'>
         {card}
-        {card}
+        {/* {card} */}
       </div>
     </div>
   )
