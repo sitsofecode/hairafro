@@ -61,7 +61,7 @@ createServer({
             price: "gratuit",
             imageUrl: "/tabouret.png",
             Cathegorie: "zem",
-            type: "photo"
+            type: "vecteur"
         });
         server.create("coiffure", {
             id: "8", name: "AKOUETE",
